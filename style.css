@@ -1,0 +1,132 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+    background: #e9ecf1;
+    color: #1e293b;
+    line-height: 1.6;
+}
+/* HEADER */
+ header {
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  position: sticky;
+  top: 0;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 5px;  
+}
+.profile img {
+  width: 125px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.left {
+  display: flex;
+  flex-direction: column; 
+  white-space: nowrap;  
+  position: absolute;
+  gap: 5px;   
+  margin: 0px;             
+  left: 155px;
+}
+.left h1{
+    margin: 0;
+   line-height: 1.2;
+}
+.left p {
+margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #000080;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    scroll-margin-top: 220px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill-cards, .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.experience a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0d6efd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.experience a:hover {
+    text-decoration: underline;
+} 
+.skill-cards .card i {
+  font-size: 40px;
+  color: #2563EB;
+  margin-bottom: 10px;
+}
+
+.skill-cards .card p {
+  font-weight: 500;
+}
+
+
