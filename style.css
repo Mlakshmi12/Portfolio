@@ -129,11 +129,11 @@ h2 {
   font-weight: 500;
 }
 
-/* ===== Mobile View Fix ===== */
-@media (max-width: 768px) {
+/* ===== MOBILE HEADER ONLY (DESKTOP SAFE) ===== */
+@media screen and (max-width: 768px) {
 
   header {
-    padding: 20px 10px;
+    padding: 15px 10px;
     text-align: center;
   }
 
@@ -144,30 +144,35 @@ h2 {
     gap: 10px;
   }
 
-  .header-container img {
-    width: 120px;
-    height: 120px;
+  /* override absolute/fixed only on mobile */
+  header *,
+  nav {
+    position: static !important;
   }
 
-  .header-text h1 {
-    font-size: 24px;
+  header img {
+    width: 110px;
+    height: 110px;
+  }
+
+  header h1 {
+    font-size: 22px;
     line-height: 1.2;
+    margin: 6px 0;
   }
 
-  .header-text h2,
-  .header-text p {
-    font-size: 16px;
+  header p,
+  header a {
+    font-size: 14px;
   }
 
   nav {
-    margin-top: 10px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 5px 10px;
-    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
   }
 }
 
-
+ 
